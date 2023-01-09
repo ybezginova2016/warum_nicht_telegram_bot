@@ -16,7 +16,7 @@ You can find a Github Action template here, please make sure you copy it to your
 ### Usage
 To pass Github Secrets to your action, you need to specify the secrets and their corresponding names like following:
 
-```
+```python
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -33,14 +33,16 @@ jobs:
 
 To access environment variables in Python like that:
 
-```import os
+```python
+import os
 
 bearer_token = os.environ["TW_BEARER_TOKEN"]
 ```
 
 #### URI for connecting to the MongoDB cluster can be constructed in the following way:
 
-```from pymongo import MongoClient
+```python
+from pymongo import MongoClient
 
 user = os.environ["MONGODB_USER"]
 password = os.environ["MONGODB_PASSWORD"]
