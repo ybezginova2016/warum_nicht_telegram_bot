@@ -1,8 +1,13 @@
 import tweepy
 import os
 
-
 from dto import Post
+
+# From Twitter API
+os.environ["TW_ACCESS_TOKEN"] = '1600087262909317120-WaeIU8aBbV0QkyML1U3xtzZP1NHeAO'
+os.environ["TW_ACCESS_TOKEN_SECRET"] = 'uNdcHPWMzR8uruFHoXEFKylue5VmOExki4PZn3omw9x3U'
+os.environ["TW_CONSUMER_KEY"] = 'NnPL65juj8nstnd6x5t4tECun'
+os.environ["TW_CONSUMER_KEY_SECRET"] = 'i0yD4lmam6mBDqTaLlCOSQ5DdP38yj8yeqZ2ezNy3GRHYw4Zku'
 
 TW_ACCESS_TOKEN = os.getenv("TW_ACCESS_TOKEN")
 TW_ACCESS_TOKEN_SECRET = os.getenv("TW_ACCESS_TOKEN_SECRET")

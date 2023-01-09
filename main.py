@@ -1,3 +1,4 @@
+import os
 from db import (OhlcvDao,
                 PostDao)
 from service_post import (get_oldest_post,
@@ -19,7 +20,5 @@ if __name__ == '__main__':
         if post.tweet_id is None:
             post.tweet_id = twitter_id
         post_dao.save_post(post)
-
-
 
 print('DONE')

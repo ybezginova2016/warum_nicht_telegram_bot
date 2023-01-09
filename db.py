@@ -5,6 +5,10 @@ import certifi
 from pymongo import MongoClient
 
 from dto import Pair, PairPost, AggregatePairVenue, Post
+# From MongoDB
+os.environ["MONGODB_USER"] = 'twitter-bot-challenge-user'
+os.environ["MONGODB_PASSWORD"] = '1Dci5pk0UHGBUzpN'
+os.environ["MONGO_DB_ADDRESS"] = 'loadtests.mjmdg.mongodb.net'
 
 _MONGODB_USER = os.getenv("MONGODB_USER")
 _MONGODB_PASSWORD = os.getenv("MONGODB_PASSWORD")
